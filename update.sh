@@ -53,6 +53,6 @@ killall -9 tvheadend
 sleep 1
 cd ..
 cd ..
-/root/tvmaster/script/restart.sh
+./restart.sh
 
 exit 0
