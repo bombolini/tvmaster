@@ -75,22 +75,22 @@ wait $PID
 
 function wget_tvh {
 sdtname2=`echo $sdtname | sed 's/&/%26/g' | sed 's/+/%2B/g' | sed 's/_/+/g'`
-wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://master:f6J756KJdbbJewng@145.239.128.92:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
+wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://master:f6J756KJdbbJewng@public_tvh_ip1:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
 PID=$!
 wait $PID
-wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@prx01.happytimes.me:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
+wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@public_tvh_ip2:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
 PID=$!
 wait $PID
-wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@prx02.happytimes.me:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
+wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@public_tvh_ip3:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
 PID=$!
 wait $PID
-wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@prx03.happytimes.me:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
+wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@public_tvh_ip4:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
 PID=$!
 wait $PID
-wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@prx04.happytimes.me:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
+wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@public_tvh_ip5:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
 PID=$!
 wait $PID
-wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@prx05.happytimes.me:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
+wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://bombolini:fejsrtjejsfe@public_tvh_ip6:9981/stream/channelname/$sdtname2?profile=pass&mux=pass" &
 PID=$!
 wait $PID
 wget --user-agent="your_user_agent" --auth-no-challenge -t1 -T5 -qO- "http://$user:$pass@$tvh_public_ip:$port/stream/channelname/$sdtname2?profile=pass&mux=pass" &
